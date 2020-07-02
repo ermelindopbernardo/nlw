@@ -21,7 +21,7 @@
     </a>
     </header>
 
-    <form action="">
+    <form action="" >
         <h1>Cadastro do ponto de coleta</h1>
             <fieldset>
                <legend>
@@ -29,24 +29,24 @@
                </legend>
                <div class="field">
                    <label for="name">Nome da entidade</label>
-                   <input type="text" name="name">
+                   <input type="text" name="name" required>
                </div>
 
                <div class="field-group">
                    <div class="field">
                         <label for="adress">Endereço</label>
-                        <input type="text" name="adress">
+                        <input type="text" name="adress" required>
                    </div>
                    <div class="field">
                     <label for="adress2">Numero/complementar</label>
-                    <input type="text" name="adress2">
+                    <input type="text" name="adress2" required>
                    </div>
                </div>
 
                <div class="field-group">
                 <div class="field">
                     <label for="state">Estado</label>
-                    <select name="uf" id="">
+                    <select name="uf" id="" required>
                         <option value="">Selecione Estado</option>
                     </select>
                     <input type="hidden" name="state">
@@ -54,7 +54,7 @@
 
                 <div class="field">
                     <label for="city">Cidade</label>
-                    <select name="city" id="" disabled>
+                    <select name="city" id="" disabled required>
                         <option value="">Selecione a cidade</option>
                         
                     </select>
@@ -71,6 +71,41 @@
                <legend>
                    <h2>Itens de coleta</h2>
                </legend>
+
+               <div class="items-grid">
+
+                <li data-id="1" class="selected">
+                    <img src="/assest/lampadas.svg" alt="Lampada">
+                    <span>Lampada</span>
+                </li>
+
+                <li data-id="2">
+                    <img src="/assest/baterias.svg" alt="Pilhas e Baterias">
+                    <span>Pilhas e Baterias</span>
+                </li>
+
+                <li data-id="3">
+                    <img src="/assest/papeis-papelao.svg" alt="Papais e Papelao">
+                    <span>Papais e Papelao</span>
+                </li>
+
+                <li data-id="4">
+                    <img src="/assest/eletronicos.svg" alt="Residuos eletronicos">
+                    <span>Residuos eletronicos</span>
+                </li>
+
+                <li data-id="5">
+                    <img src="/assest/organicos.svg" alt="Residuos Organicos">
+                    <span>Residuos Organicos</span>
+                </li>
+
+                <li data-id="6">
+                    <img src="/assest/oleo.svg" alt="Oleo de Cozinha">
+                    <span>Oleo de Cozinha</span>
+                </li>
+            
+               </div>
+               <input type="hidden" name="items">
             </fieldset>
 
 
